@@ -279,3 +279,28 @@ export const TextInput = ({ setValue,
   )
 }
 
+export const IconButton = ({ children, onClick }: 
+                    { children: any, onClick: any }) => {
+
+  return (
+    <button className="bg-off-white
+                       text-dark
+                       border
+                       border-dark
+                       p-2
+                       hover:bg-dark
+                       hover:text-off-white
+                       duration-500
+                       ease-out
+                       flex
+                       justify-center
+                       items-center
+                       rounded-md
+                       "
+            onClick={onClick}>
+      {children}
+    </button>
+  )
+
+}
+
